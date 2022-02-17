@@ -1,0 +1,48 @@
+@import "resources/styles/constants.scss";
+.centerInfo {
+  display: inline-block;
+  width: 27%;
+  .centerInfo-heading {
+    display: flex;
+
+    h5 {
+      margin: 0;
+      font-weight: 700;
+      color: $black;
+    }
+
+    span {
+      background-color: $darkBlue;
+      color: white;
+      border-radius: 10px;
+      padding: 2px 5px;
+      font-size: 0.8em;
+      align-self: flex-start;
+      margin-left: 1em;
+    }
+  }
+
+  .centerInfo-address {
+    line-height: 2em;
+    color: $darkGrey;
+  }
+  .centerInfo-footer {
+    font-family: 600;
+  }
+}
+
+.dark .centerInfo {
+  h5 {
+    color: $darkPrimaryForeground;
+  }
+  .centerInfo-address {
+    color: azure;
+  }
+}
+
+/*Tablet and mobile landscape*/
+@media only screen and (max-device-width: 1024px) {
+  .centerInfo {
+    width: 17%;
+  }
+}

@@ -1,0 +1,16 @@
+.calenderSliderMobile {
+  display: none;
+}
+.calenderSliderDesktop {
+  display: flex;
+}
+
+/* Portrait */
+@media only screen and (max-device-width: 480px) and (orientation: portrait) {
+  .calenderSliderMobile {
+    display: flex;
+  }
+  .calenderSliderDesktop {
+    display: none;
+  }
+}
